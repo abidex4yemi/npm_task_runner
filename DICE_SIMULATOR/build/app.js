@@ -1,0 +1,1 @@
+function Dice(e){this.sides=e}function displayNumber(e){document.getElementById("placeholder").innerHTML=e}Dice.prototype.roll=function(){return Math.floor(Math.random()*this.sides)+1},exports=Dice;const dice=new Dice(6),button=document.getElementById("button");button.addEventListener("click",function(){displayNumber(dice.roll())});

@@ -1,0 +1,19 @@
+{
+  "name": "dice_simulator",
+  "version": "0.0.1",
+  "description": "A simple dice game simulator",
+  "main": "build/app.js",
+  "scripts": {
+    "test": "mocha",
+    "uglify": "uglifyjs src/models/* src/frontend.js -m -c -o build/app.js",
+    "copy-files": "cp src/*.html build/ & cp src/*.css build/",
+    "build": "npm run uglify && npm run copy-files"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "uglify-js": "^2.8.29"
+  }
+}
